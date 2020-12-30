@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="web3.min.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>区块链学院 💉 medicine
+    </title>
+</head>
+
+<body>
+    <h2>江西软件职业技术大学 区块链学院</h2>
+
+    <button class="enableEthereumButton">Enable Ethereum</button>
+    <h5>Account: <span class="showAccount"></span></h5>
+    <hr />
+
+
+
+    <div class="container">
+        <h1 style="text-align: center;">Fair Trade Medicine</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of medicine using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-make">
+        <h2>addManufacturer 添加制造商
+        </h2>
+        <div class="form-group">
+            Manufacturer Address
+            <br>
+
+            <input type="text" id="ManufacturerAddr" name="ManufacturerAddr" value="" placeholder="请输入制造商账户地址"
+                size="50"><br>
+            <div class=button-div>
+                <button class="btn-fetchOne" id="btn_ManufacturerAddr" type="button" data-id="9">SubMit</button>
+            </div>
+            <span id="addManuf_return"></span>
+        </div>
+    </div>
+
+
+    <div class=form-break></div>
+
+
+
+    <div id="ftc-make">
+        <h2>addDistributor 添加经销商
+        </h2>
+        <div class="form-group">
+            Distributor Address
+            <br>
+
+            <input type="text" id="DistributorAddr" name="DistributorAddr" value="" placeholder="请输入经销商账户地址"
+                size="50"><br>
+            <div class=button-div>
+                <button class="btn-fetchOne" id="btn_DistributorAddr" type="button" >SubMit</button>
+            </div>
+          
+        </div>
+    </div>
+
+
+    <div class=form-break></div>
+
+
+    <h2>药品查询</h2>
+
+    <div class="form-group">
+        UPC
+        <br>
+        <input type="number" id="upc" name="upc" value=1><br>
+        <br>
+        <div class=button-div>
+            <button class="btn-fetchOne" id="btn-fetchOne" type="button" data-id="9">Fetch Data 1</button>
+
+        </div>
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
